@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Formulário HTML | CSS</title>
+</head>
+<body>
+    <div class="content">
+        <form action="">
+            <fieldset>
+                <legend>Dados Pessoais</legend>
+                <div class="row">
+                    <label for="nome">Nome</label>
+                    <input type="text" id="nome" name="nome" placeholder="Digite seu nome" autocomplete="off" required>
+                </div>
+                <div class="row">
+                    <label for="sobrenome">Sobrenome</label>
+                    <input type="text" id="sobrenome" name="sobrenome" placeholder="Digite seu sobrenome" autocomplete="off" required>
+                </div>
+                <div class="row">
+                    <label for="email">E-mail</label>
+                    <input type="email" id="email" name="email" placeholder="Digite seu email" autocomplete="off" required>
+                </div>
+                <div class="row">
+                    <label for="dtnasc">Data de Nascimento</label>
+                    <input type="date" id="dtnasc" name="dtnasc">
+                </div>
+                <div class="row">
+                    <label for="estadocivil">Estado Civil</label>
+                    <input type="radio" value="Casado" id="casado" name="estadocivil">
+                    <label for="solteiro">Casado</label>
+                    <input type="radio" value="Solteiro" id="solteiro" name="estadocivil">
+                    <label for="">Solteiro</label>
+                </div>
+                <div class="row">
+                    <label for="filhos">Filhos</label>
+                    <input type="number" id="filhos" name="filhos" max="10" min="0">
+                </div>
+            </fieldset>
+            <fieldset>
+                <legend>Dados Profissionais</legend>
+                <div class="row">
+                    <label for="selecione">Selecione as linguagens que você conhece:</label>
+                </div>
+                <div class="row">
+                    <input type="checkbox" id="html" name="html">
+                    <label for="html">HTML</label>
+                    <input type="checkbox" id="css" name="css">
+                    <label for="css">CSS</label>
+                    <input type="checkbox" id="js" name="js">
+                    <label for="js">JavaScript</label>
+                </div>
+                <div class="row">
+                    <label for="">Fale sobre você</label>
+                </div>
+                <div class="row">
+                    <textarea name="sobre" id="sobre" cols="30" rows="5"  placeholder="Descreva as sua habilidades" autocomplete="off"></textarea>
+                </div>
+                <div class="row">
+                    <input type="file" accept=".pdf, .doc, .docx, .jpg .jpeg">
+                </div>
+            </fieldset>
+            <div class="buttons">
+                <input type="submit">
+                <input type="reset" value="Limpar">
+            </div>
+        </form>
+    </div>
+</body>
+</html>
